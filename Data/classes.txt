@@ -1,0 +1,14 @@
+ac
+bag
+board
+bottle
+bucket
+buds
+chair
+cube
+plant
+purse
+rod
+stool
+sunscreen
+tin
