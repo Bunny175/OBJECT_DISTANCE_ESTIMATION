@@ -18,7 +18,7 @@ The goal of this project is to:
 
 Since the dataset is large (~800MB), it has been uploaded to Google Drive instead of being included directly in the repository.
 
-📥 **Download Dataset**: [Click here to download]([https://drive.google.com/file/d/11cRSx3T0gCUJ1_3SQeKxHfu97XcYwZVw/view?usp=sharing])
+📥 **Download Dataset**: [Click here to download](https://drive.google.com/file/d/11cRSx3T0gCUJ1_3SQeKxHfu97XcYwZVw/view?usp=sharing)
 
 > After downloading, place the `data/` folder inside the root of this project.
 
