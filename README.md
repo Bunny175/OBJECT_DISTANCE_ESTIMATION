@@ -16,7 +16,7 @@ The goal of this project is to:
 
 ## 📦 Dataset
 
-Our Dataset is collected on our own using our own camera and pictures of different types of objects and different size objects were taken into consideration. 
+Our Dataset is collected on our own using our own camera and pictures of different types of objects and different size dobjects were taken into consideration. 
 
 📥 **Download Dataset**: [Click here to download](https://drive.google.com/file/d/11cRSx3T0gCUJ1_3SQeKxHfu97XcYwZVw/view?usp=sharing)
 
@@ -24,7 +24,7 @@ Our Dataset is collected on our own using our own camera and pictures of differe
 
 ## 🧠 Model Details
 
-- **Model Used**: [YOLOv8](https://github.com/ultralytics/ultralytics)
+- **Model Used**: [YOLOv8,MiDas,Random Forest](https://github.com/ultralytics/ultralytics)
 - **Framework**: PyTorch (via Ultralytics YOLOv8)
 - **Training**:
   - Used yolov8 for object detection and extraced bounding box features.
