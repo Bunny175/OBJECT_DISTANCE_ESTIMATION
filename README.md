@@ -1,6 +1,6 @@
 # OBJECT_DISTANCE_ESTIMATION
 
-This project estimates the **distance between a camera and an object in an image**, using a custom-trained **YOLOv8** model and real-world data.
+This project estimates the **distance between a camera and an object in an image**, using a custom-trained **YOLOv8  MiDas and a supervised learning ** model and real-world data collected on own.
 
 ---
 
@@ -9,18 +9,16 @@ This project estimates the **distance between a camera and an object in an image
 The goal of this project is to:
 
 - Detect a specific object in an image using **YOLOv8**
-- Estimate the **distance from the camera to the object** using size scaling and calibration
+- Estimate the **distance from the camera to the object** using features extracted from the image.
 - Support inference on custom images
 
 ---
 
 ## 📦 Dataset
 
-Since the dataset is large (~800MB), it has been uploaded to Google Drive instead of being included directly in the repository.
+Our Dataset is collected on our own using our own camera and pictures of different types of objects and different size objects were taken into consideration. 
 
 📥 **Download Dataset**: [Click here to download](https://drive.google.com/file/d/11cRSx3T0gCUJ1_3SQeKxHfu97XcYwZVw/view?usp=sharing)
-
-> After downloading, place the `data/` folder inside the root of this project.
 
 ---
 
@@ -29,17 +27,18 @@ Since the dataset is large (~800MB), it has been uploaded to Google Drive instea
 - **Model Used**: [YOLOv8](https://github.com/ultralytics/ultralytics)
 - **Framework**: PyTorch (via Ultralytics YOLOv8)
 - **Training**:
-  - Custom object detection model
-  - Trained on images of the object taken at different known distances
+  - Used yolov8 for object detection and extraced bounding box features.
+  - Trained on images of the object taken at different known distances using Random Forest.
 
 ---
 
 ## 📷 How It Works
 
-1. You take a photo of the object using a calibrated camera.
-2. YOLOv8 detects the object and returns the bounding box.
-3. The size of the bounding box is compared to real-world calibration data.
-4. The **distance** from the camera to the object is calculated using inverse proportionality.
+1. You take a photo of the object using a monocular camera.
+2. YOLOv8 detects the object and returns the bounding box features.
+3. MiDas model used to extarct depth features.
+4. Using bounding box and depth features created a own dataset.
+5. Trained a Random Forest model using the data updated from the images.
 
 ---
 
